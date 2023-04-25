@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 from sklearn.ensemble import RandomForestRegressor
@@ -11,7 +10,6 @@ from xgboost import XGBRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_squared_error,r2_score,mean_absolute_error
 import streamlit as st
-import plotly.graph_objects as go
 
 st.set_page_config(page_title="IMDb Box Office Revenue Prediction App", page_icon=":movie_camera:", layout="wide")
 
