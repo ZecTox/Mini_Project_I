@@ -16,7 +16,7 @@ st.set_page_config(page_title="IMDb Box Office Revenue Prediction App", page_ico
 page_bg_image = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-image: url(https://variety.com/wp-content/uploads/2022/12/100-Greatest-Movies-Variety.jpg?w=1360&h=765&crop=1);
+    background-image: url(https://images.pexels.com/videos/3045163/free-video-3045163.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
     background-size: cover;
     #opacity: 0.7;
 }
@@ -29,37 +29,37 @@ st.markdown('''
 <style>
 .my-div1 {
     display: inline-block;
-    border: 1px solid black;
-    -webkit-text-stroke: 0.5px black;
-    background-color: rgba(0, 0, 0, 0.75);
+    #border: 1px solid black;
+    #-webkit-text-stroke: 0.5px black;
+    #background-color: rgba(0, 0, 0, 0.75);
     font-size: 40px;
     font-weight: bold;
 }
 
 .my-div2 {
     display: inline-block;
-    border: 1px solid black;
-    -webkit-text-stroke: 0.5px black;
+    #border: 1px solid black;
+    #-webkit-text-stroke: 0.5px black;
     color: white;
-    background-color: rgba(0, 0, 0, 0.75);
+    #background-color: rgba(0, 0, 0, 0.75);
     font-size: 30px;
     font-weight: bold;
 }
 
 .my-div3 {
     display: inline-block;
-    border: 1px solid black;
-    -webkit-text-stroke: 0.5px black;
+    #border: 1px solid black;
+    #-webkit-text-stroke: 0.5px black;
     color: white;
     font-size: 20px;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.75);
+    #background-color: rgba(0, 0, 0, 0.75);
 }
 
 .my-div4 {
     display: inline-block;
-    border: 1px solid black;
-    -webkit-text-stroke: 0.5px black;
+    #border: 1px solid black;
+    #-webkit-text-stroke: 0.5px black;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -69,7 +69,7 @@ st.markdown('''
 </style>
 ''', unsafe_allow_html=True)
 
-@st.cache(allow_output_mutation=True)
+@st.cache_data()
 def load_model():
     model = RandomForestRegressor(random_state=1)
     trainData = pd.read_csv('imdb_data_for_webapp.csv')
