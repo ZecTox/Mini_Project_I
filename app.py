@@ -103,8 +103,8 @@ def main():
     size_of_cast = st.sidebar.slider("Size of Cast", min_value=1, max_value=25, step=1, value=5)
     num_spoken_languages = st.sidebar.slider("Number of Spoken Languages", min_value=1, max_value=10, step=1, value=1)
     num_production_companies = st.sidebar.slider("Number of Production Companies", min_value=1, max_value=10, step=1, value=1)
-    genre_count = st.sidebar.slider("Genre Count", min_value=1, max_value=10, step=1, value=1)
-
+    genre_select = st.multiselect("Select Genre", options=['Action', 'Adventure', 'Animation', 'Comedy', 'Crime', 'Documentary', 'Drama', 'Family', 'Fantasy'])
+    genre_count = len(genre_select)
     input_dict = {
         'budget': budget,
         'popularity': popularity,
