@@ -140,5 +140,5 @@ st.markdown('''
 st.write(""" ###### """)
 
 st.write("""
-##### * Dataset used for our Project * :- [Kaggle - TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
+##### * Dataset used for our Project * :- [Kaggle - TMDB 5000 Movie Dataset](https://www.kaggle.com/competitions/tmdb-box-office-prediction/data?select=test.csv)
 """)
