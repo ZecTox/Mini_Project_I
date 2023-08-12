@@ -4,10 +4,6 @@ import seaborn as sns
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.ensemble import HistGradientBoostingRegressor
-from xgboost import XGBRegressor
-from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_squared_error,r2_score,mean_absolute_error
 import streamlit as st
 
